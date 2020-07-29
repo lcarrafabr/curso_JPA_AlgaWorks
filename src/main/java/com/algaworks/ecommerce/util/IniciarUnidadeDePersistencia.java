@@ -14,7 +14,7 @@ public class IniciarUnidadeDePersistencia {
 
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
-        //Faça seuis testes aqui.
+        //Faça seuis testes aqui
         Produto produto = entityManager.find(Produto.class, 1);
 
         System.out.println(produto.getNome());
