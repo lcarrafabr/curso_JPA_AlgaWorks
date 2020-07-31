@@ -26,7 +26,7 @@ public class OperacoesComTransacaoTest extends EntityManagerTest {
 
         Produto produtoPersist = new Produto();
 
-        produtoPersist.setId(5);
+        //produtoPersist.setId(5);
         produtoPersist.setNome("Teclado Gamer Razer");
         produtoPersist.setDescricao("O RGB deixa seu PC mais rapido.");
         produtoPersist.setPreco(new BigDecimal(8000));
@@ -41,7 +41,7 @@ public class OperacoesComTransacaoTest extends EntityManagerTest {
 
         Produto produto = new Produto();
 
-        produto.setId(4);
+        //produto.setId(4);
         produto.setNome("Microfone BM 800");
         produto.setDescricao("Um bom microfone custo beneficio para iniciantes.");
         produto.setPreco(new BigDecimal(80));
@@ -100,7 +100,7 @@ public class OperacoesComTransacaoTest extends EntityManagerTest {
 
         Produto produto = new Produto();
 
-        produto.setId(2);
+        //produto.setId(2);
         produto.setNome("Camera Cannon");
         produto.setDescricao("Camera Tekpix modificada para parecer original.");
         produto.setPreco(new BigDecimal(7500));
