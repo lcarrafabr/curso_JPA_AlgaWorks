@@ -9,3 +9,6 @@ insert into pedido (id, cliente_id, data_pedido, total, status) values (1, 1, sy
 insert into pedido (id, cliente_id, data_pedido, total, status) values (2, 1, sysdate(), 5000.0, 'PENDENTE');
 
 insert into item_pedido (id, pedido_id, produto_id, preco_produto, quantidade) values (1, 1, 1, 499.0, 2);
+insert into item_pedido (id, pedido_id, produto_id, preco_produto, quantidade) values (2, 2, 3, 7590, 2);
+
+insert into categoria (id, nome) values (1, "Eletrônicos");

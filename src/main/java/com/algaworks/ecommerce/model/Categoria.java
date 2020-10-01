@@ -11,7 +11,7 @@ import java.util.List;
 @Setter
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
-@Table(name = "categotia")
+@Table(name = "categoria")
 public class Categoria {
 
     @EqualsAndHashCode.Include
@@ -28,6 +28,9 @@ public class Categoria {
 
     @OneToMany(mappedBy = "categoriaPai")
     private List<Categoria> categorias;
+
+    @ManyToMany(mappedBy = "categorias")
+    private List<Produto> produtos;
 
 
 }
