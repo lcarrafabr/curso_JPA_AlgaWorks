@@ -7,6 +7,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Objects;
 
@@ -21,6 +22,12 @@ public class Produto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+
+    @Column(name = "data_criacao", updatable = false)//updatable = false não quero que seja atualizado
+    private LocalDateTime dataCriacao;
+
+    @Column(name = "data_ultima_atualizacao", insertable = false)//Não quero que seja inserido no ato do cadastro
+    private LocalDateTime dataUltimaAtualizacao;
 
     private String nome;
 
