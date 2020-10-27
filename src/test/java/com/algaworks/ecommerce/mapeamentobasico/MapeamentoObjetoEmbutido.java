@@ -30,7 +30,7 @@ public class MapeamentoObjetoEmbutido extends EntityManagerTest {
         Cliente cliente = entityManager.find(Cliente.class, 1);
 
         //pedido.setId(1);
-        pedido.setDataPedido(LocalDateTime.now());
+        pedido.setDataCriacao(LocalDateTime.now());
         pedido.setStatus(StatusPedido.AGUARDANDO);
         pedido.setTotal(new BigDecimal(5000));
         pedido.setEnderecoEntrega(endereco);
